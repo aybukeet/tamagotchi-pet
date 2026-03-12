@@ -1,50 +1,85 @@
-# Welcome to your Expo app 👋
+# 🐰 Tamagotchi Tavşan Uygulaması
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Bu proje, **React Native** kullanılarak geliştirilmiş basit bir **dijital evcil hayvan (Tamagotchi)** uygulamasıdır. Amaç, React Native’in temel kavramları olan **Component, Props, State ve JSX** yapılarını uygulamalı olarak kullanmaktır.
 
-## Get started
+Uygulamada kullanıcı, sevimli bir tavşan ile etkileşime geçebilir ve onu **besleyerek veya onunla oynayarak** mutluluk ve açlık seviyelerini değiştirebilir.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🎯 Özellikler
 
-2. Start the app
+* 🧩 **Component Yapısı**
+  Uygulamada yeniden kullanılabilir bir `Pet` component’i bulunmaktadır.
 
-   ```bash
-   npx expo start
-   ```
+* 📦 **Props Kullanımı**
+  Evcil hayvanın **isim** ve **tür** bilgileri props aracılığıyla component’e gönderilmektedir.
 
-In the output, you'll find options to open the app in a
+* 🔄 **State Yönetimi**
+  Uygulamada iki adet state bulunmaktadır:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+  * `aclik`
+  * `mutluluk`
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+* 🎮 **Kullanıcı Etkileşimi**
 
-## Get a fresh project
+  * **Besle** butonu → açlık seviyesini azaltır
+  * **Oyna** butonu → mutluluk seviyesini artırır
 
-When you're ready, run:
+* 🐰 **Dinamik Emoji**
+  Tavşanın emojisi durumuna göre değişir:
 
-```bash
-npm run reset-project
+  * Çok mutluysa → mutlu emoji
+  * Çok açsa → üzgün emoji
+
+---
+
+## 🛠 Kullanılan Teknolojiler
+
+* React Native
+* Expo
+* JavaScript
+* JSX
+
+---
+
+## 🚀 Projeyi Çalıştırma
+
+Projeyi bilgisayarınıza klonlayın:
+
+```id="gitclone01"
+git clone https://github.com/kullaniciadi/tamagotchi-pet.git
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Proje klasörüne girin:
 
-## Learn more
+```id="cd01"
+cd tamagotchi-pet
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+Bağımlılıkları yükleyin:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```id="npm01"
+npm install
+```
 
-## Join the community
+Projeyi başlatın:
 
-Join our community of developers creating universal apps.
+```id="start01"
+npm start
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Daha sonra uygulamayı **Expo Go uygulaması** veya **web tarayıcı** üzerinden görüntüleyebilirsiniz.
+
+---
+
+## 📸 Uygulama İçeriği
+
+Uygulama ekranında şu bilgiler yer alır:
+
+* Evcil hayvanın ismi
+* Türü
+* Açlık seviyesi
+* Mutluluk seviyesi
+* Besle ve Oyna butonları
+
+---
